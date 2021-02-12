@@ -68,13 +68,13 @@ end
 #   end
 # end
 
-def over?(board)
-  if (won?(board) && full?(board)) || (won?(board) && !full?(board)) || draw?(board)
-    true
-  else
-     false
-  end
-end
+# def over?(board)
+#   if (won?(board) && full?(board)) || (won?(board) && !full?(board)) || draw?(board)
+#     true
+#   else
+#      false
+#   end
+# end
 
 def over?(board)
   (won?(board) && full?(board)) || (won?(board) && !full?(board)) || draw?(board)
