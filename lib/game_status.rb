@@ -85,6 +85,6 @@ def over?(board)
 end
 
 def winner(board)
-winning_token = won?(board)
+winning_combo = won?(board)
   winning_token
 end
