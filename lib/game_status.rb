@@ -39,3 +39,7 @@ end
 #     index == "X" || index == "O"
 #   end
 # end
+
+def full?(board)
+  board.all? {|token| token == "X"|| token == "O"}
+end
