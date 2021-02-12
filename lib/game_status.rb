@@ -84,11 +84,11 @@ def over?(board)
   won?(board) || full?(board)
 end
 
-def winner(board)
-winning_combo = won?(board)
-  winning_token = board[winning_combo[0]]
-  winning_token
-end
+# def winner(board)
+# winning_combo = won?(board)
+#   winning_token = board[winning_combo[0]]
+#   winning_token
+# end
 
 def winner(board)
 winning_combo = won?(board)
