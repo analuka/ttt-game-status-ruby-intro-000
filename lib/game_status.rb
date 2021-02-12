@@ -85,5 +85,6 @@ def over?(board)
 end
 
 def winner?(board)
-  board.detect?{|token| won?(board)}
+  won?(board) = token
+  token
 end
