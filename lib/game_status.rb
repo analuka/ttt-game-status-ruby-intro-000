@@ -86,5 +86,5 @@ end
 
 def winner(board)
 winning_combo = won?(board)
-  winning_token = winning_combo[0].value
+  winning_token = board[winning_combo[0]]
 end
