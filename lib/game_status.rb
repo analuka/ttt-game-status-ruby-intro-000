@@ -15,6 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6] # right diagonal
 ]
 
+<<<<<<< HEAD
 # def won?(board)
 #   winning_combination = []
 #   WIN_COMBINATIONS.each  do |win_combination|
@@ -33,3 +34,24 @@ def won?(board)
     position_taken?(board, combo[0])
   end
 end
+=======
+# board = ["0", "X", "O", "X", "O", "X", " O", "X", "O"]
+board = ["O", "O", " ", "X", "X", "X", " ", " ", " "]
+def won?(board)
+  winning_combination = []
+  WIN_COMBINATIONS.each  do |win_combination|
+    win_combination.each do |win_index|
+      if board[win_index]  == "X"
+        winning_combination << win_index
+      # elsif board[win_index] == "O"
+      #   winning_combination << win_index
+      end
+    end
+  end
+  # if !position_taken?(board, win_index)
+    winning_combination
+  # end
+end
+# won_combination = won?(board)
+# puts won_combination
+>>>>>>> 46b8cd686871d5b0434197155ad3ec91939b4831
