@@ -84,7 +84,7 @@ def over?(board)
   won?(board) || full?(board)
 end
 
-def winner?(board)
+def winner(board)
 winning_token = won?(board)
   winning_token
 end
